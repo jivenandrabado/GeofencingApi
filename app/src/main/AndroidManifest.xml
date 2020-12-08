@@ -24,9 +24,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GefencingAPI">
+
         <receiver
             android:name=".GeofenceBroadcastReceiver"
-            android:enabled="true"
             android:exported="true"
             />
         <!--
@@ -50,7 +50,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".GpsStatusReceiver">
+        <receiver android:name=".GpsStatusReceiver"
+            >
             <intent-filter>
                 <action android:name="android.location.PROVIDERS_CHANGED" />
                 <category android:name="android.intent.category.DEFAULT" />

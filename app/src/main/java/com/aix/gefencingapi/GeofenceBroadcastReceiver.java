@@ -40,15 +40,12 @@ public class GeofenceBroadcastReceiver extends BroadcastReceiver {
                 Toast.makeText(context, "Entered the geofence", Toast.LENGTH_LONG).show();
                 Log.d(TAG, "onReceive: Entered the geofence");
                 notificationHelper.sendHighPriorityNotification("Entered Geofence","You have just entered the geofence "+new Date(), MapsActivity.class);
-
                 break;
 
             case Geofence.GEOFENCE_TRANSITION_DWELL:
                 Toast.makeText(context, "Dwell in the geofence", Toast.LENGTH_LONG).show();
                 Log.d(TAG, "onReceive: Dwell in the geofence");
                 notificationHelper.sendHighPriorityNotification("Dwell Geofence","You are dwelling in the geofence "+ new Date(), MapsActivity.class);
-
-
                 break;
 
             case Geofence.GEOFENCE_TRANSITION_EXIT:

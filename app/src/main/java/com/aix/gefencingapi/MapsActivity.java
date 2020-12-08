@@ -201,11 +201,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     return "GEOFENCE_NOT_AVAILABLE";
                 case GeofenceStatusCodes.GEOFENCE_TOO_MANY_GEOFENCES:
                     return "TOO_MANY_GEOFENCE";
-
                 case GeofenceStatusCodes.GEOFENCE_TOO_MANY_PENDING_INTENTS:
                     return "GEOFENCE_TOO_MANY_PENDING_INTENT";
-
-
             }
         }
 
